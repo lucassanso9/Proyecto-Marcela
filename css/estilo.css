@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+
+
+/* SECCIONES */
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+    width: 100%;
+    padding: 8px 1% 0px;
+    background: linear-gradient(aliceblue,   rgb(154, 178, 200));
+    position: fixed;
+}
+
+nav {
+    height: auto;
+    z-index: 3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 220px 5% 5%;
+}
+
+
+footer {
+    border-top: 1px rgba(0, 0, 0, 0.166) solid;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0px 0px;
+}
+
+
+/* SUBSECCIONES */
+
+.ListaMenu {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.Descript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1% 5%;
+    width: auto
+}
+
+.DescriptSt {
+    text-align: center;
+    padding: 2%;
+    margin: 0px 15vw;
+}
+
+.CardVestidos {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px 50px;
+}
+
+.CardVestidosInside {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contacto {
+    background-color: aliceblue;
+    display: flex;
+    box-sizing: content-box;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+
+/* TEXTOS */
+
+
+
+.Encabezado{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Beau Rivage';
+    font-weight: lighter;
+}
+
+.Introduccion{
+    margin: 8% 10% 8%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 100
+}
+
+
+/* Inicio NAV */
+
+.Inicio15años{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:aliceblue;
+    border-radius: 20px;
+    width: 80%;
+    margin: 1% 10% 0%;
+    padding: 2%;
+}
+
+.Foto15Inicio{
+    width: 65%;
+}
+
+
+
+
+
+/* IMAGENES-FOTOS */
+
+.LogoHead {
+    padding: 0px 0px 8px;
+    width: 120px;
+}
+
+.ImagenPrincipal {
+    height: auto;
+    width: auto;
+}
+
+.MarceAlone {
+    width: 40%
+}
+
+.VNovia1{
+    width: 50%;
+}
+
+.VNovia2,
+.VNovia3 {
+    width: 50%;
+    margin: 0px 0px 0px 20px;
+    padding: 5px 0px
+}
+
+.Mapa {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 80px;
+    border: 1px white;
+    border-radius: 20px;
+    /* No aplica el radio a la imagen */
+}
+
+/* Seccion de contacto */
+
+
+
+.SolicitudEntrevista{
+    font-size: 28px;
+    color: rgb(93, 0, 255);
+    font-weight: bolder;
+}
+
+.ListaContacto {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ListaHorarios {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.ContactoTitle{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.TextosFooter{
+    font-size: 20px;
+}
+
+
+.MainContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 250px 5% 20px;
+}
+
+
+
+
+/* Estilos para caja de entrevistas
+ */
+
+.CajaComentarios {
+    width: 450px;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+}
+
+.SubtituloSolicitud {
+    text-align: center;
+}
+
+.FormularioContacto {
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    position: relative;
+    margin: 10px;
+    padding: 8px;
+}
+
+
+
+
+/* BOTONES */
+
+.BotonContacto {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(93, 0, 255);
+    border-radius: 10px;
+    border-color: white;
+}
+
+
+
+/* SOBRE MARCELA
+ */
+
+
+
+
+
+/* Eventos */
+
+.TituloEventos{
+    margin: 2% 0%;
+    padding: 2%;
+    background-color: aliceblue;
+}
+
+.SubtituloEventos{
+    font-size: 28px;
+    padding: 2% 0px 0px;
+}
+
+.SobreMarce{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.GaleriaDesfMiss{
+    display: flex;
+    width: 80%;
+}
+
+.ImgDesfileMiss{
+    padding: 1%;
+    width: 40%;
+}
+
+.ParrafoDesfileMiss{
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* Medias Queri */
+
+@media (max-width: 768px) {
+    .NavList {
+visibility: hidden;    }
+
+
+    .Card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MarceAlone{
+        width: 80%;
+    }
+}
+
+
+
+/* ANIMACIONES TRANSFORMACIONES Y TRANSICIONES */
+.NavList{
+    filter: drop-shadow();
+}
+.NavList:hover{
+    color: solid rgb(43, 107, 226);
+    font-size: 22px;
+    filter: drop-shadow(20);
+}
+a:hover {
+    color: rgb(123, 116, 13);
+}
