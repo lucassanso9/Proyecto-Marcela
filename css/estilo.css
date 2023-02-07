@@ -22,6 +22,7 @@ header {
     padding: 8px 1% 0px;
     background: linear-gradient(aliceblue,   rgb(154, 178, 200));
     position: fixed;
+    z-index: 1;
 }
 
 nav {
@@ -78,12 +79,16 @@ footer {
 
 .CardVestidos {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 150px 0px 50px;
+    box-sizing: border-box;
 }
 
 .CardVestidosInside {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -180,12 +185,12 @@ p {
 }
 
 .VNovia1{
-    width: 50%;
+    height: 100%;
 }
 
 .VNovia2,
 .VNovia3 {
-    width: 50%;
+    height: 50vh;
     margin: 0px 0px 0px 20px;
     padding: 5px 0px
 }
@@ -358,14 +363,10 @@ visibility: hidden;    }
 
 
 /* ANIMACIONES TRANSFORMACIONES Y TRANSICIONES */
-.NavList{
-    filter: drop-shadow();
-}
+
 .NavList:hover{
     color: solid rgb(43, 107, 226);
     font-size: 22px;
     filter: drop-shadow(20);
-}
-a:hover {
     color: rgb(123, 116, 13);
 }
