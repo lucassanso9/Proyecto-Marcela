@@ -3,6 +3,84 @@
     padding: 0;
 }
 
+
+
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.gallery {
+    margin-top: 40px;
+  }
+  
+  .gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .gallery .gallery-item img {
+    transition: 0.3s;
+  }
+  
+  .gallery .gallery-links {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+  }
+  
+  .gallery .gallery-links .preview-link,
+  .gallery .gallery-links .details-link {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    line-height: 1.2;
+    margin: 30px 8px 0 8px;
+  }
+  
+  .gallery .gallery-links .preview-link:hover,
+  .gallery .gallery-links .details-link:hover {
+    color: #fff;
+  }
+  
+  .gallery .gallery-links .details-link {
+    font-size: 30px;
+    line-height: 0;
+  }
+  
+  .gallery .gallery-item:hover .gallery-links {
+    opacity: 1;
+  }
+  
+  .gallery .gallery-item:hover .preview-link,
+  .gallery .gallery-item:hover .details-link {
+    margin-top: 0;
+  }
+  
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .glightbox-clean .gslide-description {
+    background: #222425;
+  }
+  
+  .glightbox-clean .gslide-title {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+  
+
+
+
+
+
+
+/* Estilo Mio CSS */
+
 body {
     display: flex;
     flex-direction: column;
@@ -32,8 +110,9 @@ nav {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    margin: 220px 5% 5%;
+    margin:  200px 5%  20px ;
 }
 
 
@@ -81,7 +160,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 150px 0px 50px;
+    margin:  0px 50px;
     box-sizing: border-box;
 }
 
@@ -160,8 +239,8 @@ p {
     padding: 2%;
 }
 
-.Foto15Inicio{
-    width: 65%;
+.ContenedorCards p{
+  padding: 15px;
 }
 
 
@@ -358,6 +437,42 @@ visibility: hidden;    }
     .MarceAlone{
         width: 80%;
     }
+
+    .TextosFooter{
+      font-size: 12px;
+    }
+    .SolicitudEntrevista{
+      font-size: 18px;
+    }
+
+    .ContactoTitle{
+      font-size: 18px;
+    }
+    .ContenedorCards p{
+      font-size: 20px;
+    }
+    .Descript p {
+    font-size: 20px;  
+    }
+    .Descript h2{
+      font-size: 28px;
+    }
+
+    .Introduccion{
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 576px){
+  .ContenedorCards p{
+    font-size: 14px;
+  }
+  .Descript p {
+    font-size: 18px;
+  }
+  .Introduccion{
+    font-size: 14px;
+  }
 }
 
 
