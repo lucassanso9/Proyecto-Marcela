@@ -3,76 +3,73 @@
     padding: 0;
 }
 
-
-
-
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
 .gallery {
     margin-top: 40px;
-  }
-  
-  .gallery .gallery-item {
+}
+
+.gallery .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-  }
-  
-  .gallery .gallery-item img {
+}
+
+.gallery .gallery-item img {
     transition: 0.3s;
-  }
-  
-  .gallery .gallery-links {
+}
+
+.gallery .gallery-links {
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: all ease-in-out 0.3s;
     background: rgba(0, 0, 0, 0.6);
     z-index: 3;
-  }
-  
-  .gallery .gallery-links .preview-link,
-  .gallery .gallery-links .details-link {
+}
+
+.gallery .gallery-links .preview-link,
+.gallery .gallery-links .details-link {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.5);
     transition: 0.3s;
     line-height: 1.2;
     margin: 30px 8px 0 8px;
-  }
-  
-  .gallery .gallery-links .preview-link:hover,
-  .gallery .gallery-links .details-link:hover {
+}
+
+.gallery .gallery-links .preview-link:hover,
+.gallery .gallery-links .details-link:hover {
     color: #fff;
-  }
-  
-  .gallery .gallery-links .details-link {
-    font-size: 30px;
+}
+
+.gallery .gallery-links .details-link {
+    font-size: 1, 875rem;
     line-height: 0;
-  }
-  
-  .gallery .gallery-item:hover .gallery-links {
+}
+
+.gallery .gallery-item:hover .gallery-links {
     opacity: 1;
-  }
-  
-  .gallery .gallery-item:hover .preview-link,
-  .gallery .gallery-item:hover .details-link {
+}
+
+.gallery .gallery-item:hover .preview-link,
+.gallery .gallery-item:hover .details-link {
     margin-top: 0;
-  }
-  
-  .gallery .gallery-item:hover img {
+}
+
+.gallery .gallery-item:hover img {
     transform: scale(1.1);
-  }
-  
-  .glightbox-clean .gslide-description {
+}
+
+.glightbox-clean .gslide-description {
     background: #222425;
-  }
-  
-  .glightbox-clean .gslide-title {
+}
+
+.glightbox-clean .gslide-title {
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
-  }
-  
+}
+
 
 
 
@@ -87,45 +84,24 @@ body {
     font-family: 'Inter Tight', sans-serif;
 }
 
+html {
+    font-size: 100%;
+}
+
+
 
 
 /* SECCIONES */
 
 
 header {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1px;
     width: 100%;
-    padding: 8px 1% 0px;
-    background: linear-gradient(aliceblue,   rgb(154, 178, 200));
+    padding: 8px 5% 0px;
+    background: linear-gradient(aliceblue, rgb(154, 178, 200));
     position: fixed;
     z-index: 1;
 }
-
-nav {
-    height: auto;
-    z-index: 3;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin:  200px 5%  20px ;
-}
-
-
-footer {
-    border-top: 1px rgba(0, 0, 0, 0.166) solid;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 80px 0px 0px;
-}
-
-
-/* SUBSECCIONES */
 
 .ListaMenu {
     margin: auto;
@@ -133,6 +109,53 @@ footer {
     align-items: center;
     justify-content: space-evenly;
 }
+
+.ListaMenu ul {
+    display: flex;
+    flex-direction: row;
+    margin: 20PX;
+
+
+
+}
+
+
+.NavList {
+    padding: 30px;
+    transition: 0.1s;
+}
+
+.IconoMenu img{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+
+.IconoMenu, #check {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 160px 5% 20px;
+}
+
+
+footer {
+    border-top: 1px rgba(0, 0, 0, 0.166) solid;
+    background-color: aliceblue;
+    height: auto;
+    margin: 80px 0px 0px;
+
+}
+
+
+/* SUBSECCIONES */
+
+
 
 .Card {
     display: flex;
@@ -156,46 +179,22 @@ footer {
     margin: 0px 15vw;
 }
 
-.CardVestidos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:  0px 50px;
-    box-sizing: border-box;
-}
 
-.CardVestidosInside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-
-.contacto {
-    background-color: aliceblue;
-    display: flex;
-    box-sizing: content-box;
-    padding: 20px;
-    justify-content: space-evenly;
-    align-items: center
-}
 
 
 /* TEXTOS */
 
 
 
-.Encabezado{
+.Encabezado {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-family: 'Beau Rivage';
     font-weight: lighter;
 }
 
-.Introduccion{
-    margin: 8% 10% 8%;
+.Introduccion {
+    margin: 8% 10% 6%;
     text-align: center;
 }
 
@@ -205,42 +204,42 @@ a {
 }
 
 li {
-    font-size: 20px;
+    font-size: 1.25rem;
     list-style-type: none;
     text-decoration: none;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0px 0px 20px 0px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 p {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 100
 }
 
 
 /* Inicio NAV */
 
-.Inicio15años{
+.Inicio15años {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color:aliceblue;
+    background-color: aliceblue;
     border-radius: 20px;
     width: 80%;
     margin: 1% 10% 0%;
     padding: 2%;
 }
 
-.ContenedorCards p{
-  padding: 15px;
+.ContenedorCards p {
+    padding: 15px;
 }
 
 
@@ -251,7 +250,7 @@ p {
 
 .LogoHead {
     padding: 0px 0px 8px;
-    width: 120px;
+    width: 130px;
 }
 
 .ImagenPrincipal {
@@ -263,7 +262,7 @@ p {
     width: 40%
 }
 
-.VNovia1{
+.VNovia1 {
     height: 100%;
 }
 
@@ -277,8 +276,8 @@ p {
 .Mapa {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    margin: 80px;
+    width: auto;
+    margin: 25px;
     border: 1px white;
     border-radius: 20px;
     /* No aplica el radio a la imagen */
@@ -287,12 +286,6 @@ p {
 /* Seccion de contacto */
 
 
-
-.SolicitudEntrevista{
-    font-size: 28px;
-    color: rgb(93, 0, 255);
-    font-weight: bolder;
-}
 
 .ListaContacto {
     height: 120px;
@@ -310,12 +303,12 @@ p {
 
 }
 
-.ContactoTitle{
-    font-size: 22px;
+.ContactoTitle {
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
-.TextosFooter{
+.TextosFooter {
     font-size: 20px;
 }
 
@@ -323,18 +316,20 @@ p {
 .MainContacto {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 250px 5% 20px;
 }
 
-
+.IconoFoot{
+    width: 30px;
+}
 
 
 /* Estilos para caja de entrevistas
  */
 
 .CajaComentarios {
-    width: 450px;
+    width: auto;
     border-radius: 20px;
     background-color: rgb(247, 247, 247);
     padding: 20px;
@@ -385,36 +380,36 @@ input {
 
 /* Eventos */
 
-.TituloEventos{
+.TituloEventos {
     margin: 2% 0%;
     padding: 2%;
     background-color: aliceblue;
 }
 
-.SubtituloEventos{
-    font-size: 28px;
+.SubtituloEventos {
+    font-size: 1.75rem;
     padding: 2% 0px 0px;
 }
 
-.SobreMarce{
+.SobreMarce {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.GaleriaDesfMiss{
+.GaleriaDesfMiss {
     display: flex;
     width: 80%;
 }
 
-.ImgDesfileMiss{
+.ImgDesfileMiss {
     padding: 1%;
     width: 40%;
 }
 
-.ParrafoDesfileMiss{
-    font-size: 20px;
+.ParrafoDesfileMiss {
+    font-size: 1.25rem;
 }
 
 
@@ -424,64 +419,113 @@ input {
 
 /* Medias Queri */
 
-@media (max-width: 768px) {
+@media (max-width: 1101px){
     .NavList {
-visibility: hidden;    }
+        padding: 5px;
+
+    }
+}
 
 
-    .Card{
+@media (max-width: 768px) {
+
+
+    .checkbtn{
+        display: block;
+    }
+
+    .IconoMenu, #check{
+        display: none;
+    }
+
+    .IconoMenu {
+        display: block;
+        position: fixed;
+        top: 32px;
+        right: 36px;
+        cursor: pointer;
+    }
+
+    .ListaMenu ul {
+        display: block;
+        position: fixed;
+        top: 77px;
+        left: -110%;
+        background: linear-gradient(rgb(154, 178, 200), aliceblue);;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        
+    }
+
+    .ListaMenu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #check:checked ~ ul{
+        left: -20PX;
+        transition: all .25s;
+    }
+
+    .Card {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .MarceAlone{
+
+    .MarceAlone {
         width: 80%;
     }
 
-    .TextosFooter{
-      font-size: 12px;
-    }
-    .SolicitudEntrevista{
-      font-size: 18px;
+    html {
+        font-size: 80%;
     }
 
-    .ContactoTitle{
-      font-size: 18px;
-    }
-    .ContenedorCards p{
-      font-size: 20px;
-    }
-    .Descript p {
-    font-size: 20px;  
-    }
-    .Descript h2{
-      font-size: 28px;
-    }
-
-    .Introduccion{
-      font-size: 20px;
+    .MainContacto {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 576px){
-  .ContenedorCards p{
-    font-size: 14px;
-  }
-  .Descript p {
-    font-size: 18px;
-  }
-  .Introduccion{
-    font-size: 14px;
-  }
+
+@media (max-width: 579px) {
+
+    /*     .NavList {
+        display: none;
+    }
+ */
+    html {
+        font-size: 70%;
+    }
+.
 }
 
 
 
 /* ANIMACIONES TRANSFORMACIONES Y TRANSICIONES */
 
-.NavList:hover{
-    color: solid rgb(43, 107, 226);
-    font-size: 22px;
+.NavList:hover {
+            font-size: 22px;
     filter: drop-shadow(20);
-    color: rgb(123, 116, 13);
+    color: rgb(207, 197, 59);
+} 
+
+
+
+
+/* Gray Scale */
+.Galeria img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    
+}
+.Galeria a:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    -webkit-transform: scale(1.02);
+	transform: scale(1.02);
 }

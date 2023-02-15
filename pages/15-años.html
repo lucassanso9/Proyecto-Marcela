@@ -23,15 +23,22 @@
 
 <body>
     <header>
-        <h1 class="Encabezado">Marcela Giacobbe</h1>
-        <nav>
-            <ul class="ListaMenu">
-                <a href="../index.html"><img class="LogoHead" src="../Imagenes/logo-prov-removebg-preview.png" alt="Logo de Marcela Giacobbe">
-                </a><li>
+        
+        <nav class="ListaMenu">
+            <a href="../index.html"><img class="LogoHead" src="../Imagenes/IconoMarcela.png"
+                alt="Logo de Marcela Giacobbe">
+        </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="IconoMenu"><img src="../Imagenes/IconoMenu.png" alt=""></i>
+            </label>
+            <ul>
+    
+                <li>
                     <a class="NavList" href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a class="NavList" href="15-años.html">15 Años</a>
+                    <a class="NavList" href="./15-años.html">15 Años</a>
                 </li>
                 <li>
                     <a class="NavList" href="../pages/novias.html">Novias</a>
@@ -46,6 +53,7 @@
                     <a class="NavList" href="../pages/contacto.html">Contacto</a>
                 </li>
             </ul>
+    
         </nav>
     </header>
     <main>
@@ -54,61 +62,192 @@
             <p class="DescriptSt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum corporis nemo magnam.
                 Ipsam aperiam ducimus aliquid laborum aliquam minima vitae officia, natus, molestiae distinctio
                 inventore error cum soluta. Omnis, fugiat!</p>
+ 
+
+<!-- GALERIA 1 -->
+    <!-- ======= Galeria ======= -->
+    <div class="Galeria" class="container-fluid">
+        <div class="row m-5">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage1">
+              <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-1.png" alt="Vestido de novia 1">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage2">
+              <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-2.png" alt="Vestido de novia 2">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-3.png" alt="Vestido de novia 3">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage4">
+              <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-4.png" alt="Vestido de novia 4">
+            </a>
+          </div>
         </div>
-        <div class="CardVestidos">
-            <img class="VNovia1" src="../Imagenes/vestidos-novia/novia7-1.png" alt="Vestido de novia 1">
-            <div class="CardVestidosInside">
-                <img class="VNovia2" src="../Imagenes/vestidos-novia/novia7-2.png" alt="Vestido de novia 2">
-                <img class="VNovia3" src="../Imagenes/vestidos-novia/novia7-3.png" alt="Vestido de novia 3">
-            </div>
+      </div>
+      <!-- fin de Galeria -->
+  
+      <!-- ======= Modales ======= -->
+      <!--         Image 1 -->
+      <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-1.png" alt="Vestido de novia 1">
+          </div>
         </div>
-        <p class="PieFotos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas quidem quisquam laudantium voluptatem.
-        </p>
-        <div class="CardVestidos">
-            <img class="VNovia1" class="V" src="../Imagenes/vestidos-novia/novia5-2.png" alt="Vestido de novia 4">
-            <div class="CardVestidosInside">
-                <img class="VNovia2" src="../Imagenes/vestidos-novia/novia5-1.png" alt="Vestido de novia 5">
-                <img class="VNovia3" src="../Imagenes/vestidos-novia/novia5-3.png" alt="Vestido de novia 6">
-            </div>
+      </div>
+      <div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-2.png" alt="Vestido de novia 2">
+          </div>
         </div>
-        <p class="PieFotos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas quidem quisquam laudantium voluptatem.
-        </p>
-        <div class="CardVestidos">
-            <img class="VNovia1" src="../Imagenes/vestidos-novia/novia1-3.png" alt="Vestido de novia 7">
-            <div class="CardVestidosInside">
-                <img class="VNovia2" src="../Imagenes/vestidos-novia/novia1-4.png" alt="Vestido de novia 8">
-                <img class="VNovia3" src="../Imagenes/vestidos-novia/novia1-5.png" alt="Vestido de novia 9">
-            </div>
+      </div>
+      </div>
+      <div class="modal fade" id="modalImage3" tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-3.png" alt="Vestido de novia 3">
+          </div>
         </div>
-        <p class="PieFotos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas quidem quisquam laudantium voluptatem.
-        </p>
+      </div>
+      </div>
+      <div class="modal fade" id="modalImage4" tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-4.png" alt="Vestido de novia 4">
+          </div>
+        </div>
+      </div>
+      <!-- fin de Modales -->
+  <!-- FIN DE GALERIA 1 -->
+  
+  <!-- Division entre galerias -->
+  
+  
+  
+  
+  <!-- GALERIA 2 -->
+      <!-- ======= Galeria ======= -->
+      <div class="Galeria" class="container">
+        <div class="row m-5">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage1">
+              <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-1.png" alt="Vestido de novia 5">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage2">
+              <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-2.png" alt="Vestido de novia 6">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-3.png" alt="Vestido de novia 7">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalImage4">
+              <img class="img-fluid mb-4 rounded" src="../Imagenes/vestidos-novia/novia1-4.png" alt="Vestido de novia 8">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- fin de Galeria -->
+  
+      <!-- ======= Modales ======= -->
+      <!--         Image 1 -->
+      <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-1.png" alt="Vestido de novia 5">
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-2.png" alt="Vestido de novia 6">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal fade" id="modalImage3" tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-3.png" alt="Vestido de novia 7">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal fade" id="modalImage4" tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Imagenes/vestidos-novia/novia1-4.png" alt="Vestido de novia 8">
+          </div>
+        </div>
+      </div>
+      <!-- fin de Modales -->
+  <!-- FIN DE GALERIA 2 -->
+  
     </main>
 
-    <footer>
-        <div class="contacto">
-            <ul class="ListaContacto">
-                <li>
-                    <a href="https://www.instagram.com/marcelagiacobbeok/">Instagram: marcelagiacobbeok</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100063575680335">Facebook: Caprichos
-                        Angelicales</a>
-                </li>
-                <li>
-                    <a>E-mail: infomarcelagiacobbe@gmail.com</a>
-                </li>
+<footer>
+    <div class="container p-4">
+        <nav class="row mt-2 col-lg-12">
+            <a href="../index.html" class="col-lg-2 col-md-4 mb-4 mb-md-0 d-flex align-items-start mr-2">
+                <img src="../Imagenes/IconoMarcela.png" alt="Logo Marcela Giacobbe" class="LogoHead mr-2">
+            </a>
+            <ul class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <li class="font-weight-bold text-uppercase color-grey">Secciones</li>
+                <li> <a href="../index.html" class="text-reset">Inicio</a></li>
+                <li> <a href="./15-años.html" class="text-reset">Vestidos 15 Años</a></li>
+                <li> <a href="./novias.html" class="text-reset">Vestidos Novias</a></li>
+                <li> <a href="./egresadas.html" class="text-reset">Vestidos Egresadas</a></li>
+                <li> <a href="./contacto.html" class="text-reset">Contacto</a></li>
             </ul>
-            <ul class="ListaHorarios">
-                <li>
 
-                    Lunes a viernes: de 8:00 a 15:00 hs</a>
+            <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-center mb-4">Horarios de atención</h5>
+                <table class="table text-center">
+                    <tbody class="font-weight-normal">
+                        <tr>
+                            <td>Lun - Vie:</td>
+                            <td>9:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabados</td>
+                            <td>10:00 - 14:00</td>
+                        </tr>
 
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="col-lg-4 col-md-6 col-sm-8 pl-3 list-unstyled">
+                <li class="font-weight-bold text-uppercase text-end">Redes y contacto</li>
+                <li class="d-flex column justify-content-end align-items-end flex-wrap">
+                    <a href="#" class="text-reset">Caprichos Angelicales<img class="IconoFoot"
+                            src="../Imagenes/IconoFacebook.svg" alt="Icono de Facebook"></a>
+                    <a href="#" class="text-reset">marcelagiacobbeok<img class="IconoFoot"
+                            src="../Imagenes/IconoInstagram.svg" alt="Icono de instagram"></a>
+                    <a href="#" class="text-reset d-flex">infomarcelagiacobbe@gmail.com<img class="IconoFoot"
+                            src="../Imagenes/IconoMail.png" alt="Icono de mail"></a>
+                    <a href="#" class="text-reset">02214592446 <img class="IconoFoot"
+                            src="../Imagenes/IconoTelefono.png" alt="Icono de telefono"></a>
                 </li>
-                <li>Sabados: de 10:00 a 13:00 hs</li>
-            </ul>
-            <a href="./contacto.html">Solicita una entrevista</a>
 
-    </footer>
+            </ul>
+
+        </nav>
+
+    </div>
+</footer>
 
 </body>
 
