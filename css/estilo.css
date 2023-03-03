@@ -1,530 +1,516 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.gallery {
-    margin-top: 40px;
-}
-
-.gallery .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.gallery .gallery-item img {
-    transition: 0.3s;
-}
-
-.gallery .gallery-links {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: all ease-in-out 0.3s;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 3;
-}
-
-.gallery .gallery-links .preview-link,
-.gallery .gallery-links .details-link {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
-    transition: 0.3s;
-    line-height: 1.2;
-    margin: 30px 8px 0 8px;
-}
-
-.gallery .gallery-links .preview-link:hover,
-.gallery .gallery-links .details-link:hover {
-    color: #fff;
-}
-
-.gallery .gallery-links .details-link {
-    font-size: 1, 875rem;
-    line-height: 0;
-}
-
-.gallery .gallery-item:hover .gallery-links {
-    opacity: 1;
-}
-
-.gallery .gallery-item:hover .preview-link,
-.gallery .gallery-item:hover .details-link {
-    margin-top: 0;
-}
-
-.gallery .gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.glightbox-clean .gslide-description {
-    background: #222425;
-}
-
-.glightbox-clean .gslide-title {
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-}
-
-
-
-
-
-
-
-/* Estilo Mio CSS */
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inter Tight', sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter Tight", sans-serif;
 }
 
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 220px 2% 20px;
+}
 
+.Secciones {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  grid-area: secciones;
+}
+.Secciones h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Secciones ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-right: 2rem;
+}
 
+.Horarios {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: horarios;
+}
+.Horarios h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Horarios p {
+  font-size: 1.2rem;
+}
 
-/* SECCIONES */
+.Redes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  grid-area: redes;
+}
+.Redes h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Redes ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-right: 2rem;
+}
+.Redes ul li {
+  text-align: end;
+}
+.Redes .IconoFoot {
+  margin-left: 1rem;
+}
 
+footer {
+  border-top: 1px rgba(0, 0, 0, 0.166) solid;
+  background-color: aliceblue;
+  height: 100%;
+  margin: 80px 0px 0px;
+  display: grid;
+  justify-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  /*  grid-template-rows: repeat(2, 1fr); */
+  grid-template-areas: "secciones horarios redes" "secciones horarios redes";
+}
+
+.GaleriaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.GaleriaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 15px;
+  padding: 15px;
+  grid-auto-flow: dense;
+}
+
+h1 {
+  font-family: "Beau Rivage";
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+}
 
 header {
-    margin-bottom: 1px;
-    width: 100%;
-    padding: 8px 5% 0px;
-    background: linear-gradient(aliceblue, rgb(154, 178, 200));
-    position: fixed;
-    z-index: 1;
+  margin-bottom: 1px;
+  width: 100%;
+  padding: 8px 5% 0px;
+  background: linear-gradient(aliceblue, rgb(154, 178, 200));
+  position: fixed;
+  z-index: 2;
 }
 
 .ListaMenu {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 .ListaMenu ul {
-    display: flex;
-    flex-direction: row;
-    margin: 20PX;
-
-
-
+  display: flex;
+  flex-direction: row;
+  margin: 20PX;
 }
-
 
 .NavList {
-    padding: 30px;
-    transition: 0.1s;
+  padding: 30px;
+  transition: 0.1s;
 }
 
-.IconoMenu img{
-    width: 40px;
-    height: 40px;
-    border-radius: 2px;
+.IconoMenu {
+  display: none;
+}
+.IconoMenu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
 }
 
-.IconoMenu, #check {
-    display: none;
+#check {
+  display: none;
 }
-
-
-main {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    margin: 160px 5% 20px;
-}
-
-
-footer {
-    border-top: 1px rgba(0, 0, 0, 0.166) solid;
-    background-color: aliceblue;
-    height: auto;
-    margin: 80px 0px 0px;
-
-}
-
-
-/* SUBSECCIONES */
-
-
 
 .Card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-
 .Descript {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1% 5%;
-    width: auto
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1% 5%;
+  width: auto;
 }
 
 .DescriptSt {
-    text-align: center;
-    padding: 2%;
-    margin: 0px 15vw;
+  text-align: center;
+  padding: 2%;
+  margin: 0px 15vw;
 }
 
-
-
-
-/* TEXTOS */
-
-
-
 .Encabezado {
-    text-align: center;
-    font-size: 3.125rem;
-    font-family: 'Beau Rivage';
-    font-weight: lighter;
+  text-align: center;
+  font-size: 3.125rem;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: lighter;
 }
 
 .Introduccion {
-    margin: 8% 10% 6%;
-    text-align: center;
+  margin: 8% 10% 6%;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 li {
-    font-size: 1.25rem;
-    list-style-type: none;
-    text-decoration: none;
+  font-size: 1.25rem;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin: 0px 0px 20px 0px;
+  font-size: 2.5rem;
+  margin: 0px 0px 20px 0px;
 }
 
 h3 {
-    font-size: 2.5rem;
-    text-align: center;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 p {
-    font-size: 1.5rem;
-    font-weight: 100
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
-
-/* Inicio NAV */
-
 .Inicio15años {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: aliceblue;
-    border-radius: 20px;
-    width: 80%;
-    margin: 1% 10% 0%;
-    padding: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 20px;
+  width: 80%;
+  margin: 1% 10% 0%;
+  padding: 2%;
 }
 
 .ContenedorCards p {
-    padding: 15px;
+  padding: 15px;
 }
 
-
-
-
-
-/* IMAGENES-FOTOS */
-
 .LogoHead {
-    padding: 0px 0px 8px;
-    width: 130px;
+  padding: 0px 0px 8px;
+  width: 130px;
 }
 
 .ImagenPrincipal {
-    height: auto;
-    width: auto;
+  height: auto;
+  width: auto;
 }
 
 .MarceAlone {
-    width: 40%
+  width: 40%;
 }
 
 .VNovia1 {
-    height: 100%;
+  height: 100%;
 }
 
-.VNovia2,
+.VNovia2 {
+  height: 50vh;
+  margin: 0px 0px 0px 20px;
+  padding: 5px 0px;
+}
+
 .VNovia3 {
-    height: 50vh;
-    margin: 0px 0px 0px 20px;
-    padding: 5px 0px
+  height: 50vh;
+  margin: 0px 0px 0px 20px;
+  padding: 5px 0px;
 }
 
 .Mapa {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: 25px;
-    border: 1px white;
-    border-radius: 20px;
-    /* No aplica el radio a la imagen */
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 25px;
+  border: 1px white;
+  border-radius: 20px;
 }
 
-/* Seccion de contacto */
-
-
-
 .ListaContacto {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .ListaHorarios {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .ContactoTitle {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .TextosFooter {
-    font-size: 20px;
+  font-size: 20px;
 }
-
 
 .MainContacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 250px 5% 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 250px 5% 20px;
 }
 
-.IconoFoot{
-    width: 30px;
+.IconoFoot {
+  width: 30px;
 }
-
-
-/* Estilos para caja de entrevistas
- */
 
 .CajaComentarios {
-    width: auto;
-    border-radius: 20px;
-    background-color: rgb(247, 247, 247);
-    padding: 20px;
+  width: auto;
+  border-radius: 20px;
+  background-color: rgb(247, 247, 247);
+  padding: 20px;
 }
 
 .SubtituloSolicitud {
-    text-align: center;
+  text-align: center;
 }
 
 .FormularioContacto {
-    display: block;
-    align-items: center;
-    justify-items: center;
+  display: block;
+  align-items: center;
+  justify-items: center;
 }
 
 label {
-    display: block;
+  display: block;
 }
 
 input {
-    position: relative;
-    margin: 10px;
-    padding: 8px;
+  position: relative;
+  margin: 10px;
+  padding: 8px;
 }
-
-
-
-
-/* BOTONES */
 
 .BotonContacto {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(93, 0, 255);
-    border-radius: 10px;
-    border-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(93, 0, 255);
+  border-radius: 10px;
+  border-color: white;
 }
 
-
-
-/* SOBRE MARCELA
- */
-
-
-
-
-
-/* Eventos */
-
 .TituloEventos {
-    margin: 2% 0%;
-    padding: 2%;
-    background-color: aliceblue;
+  margin: 2% 0%;
+  padding: 2%;
+  background-color: aliceblue;
 }
 
 .SubtituloEventos {
-    font-size: 1.75rem;
-    padding: 2% 0px 0px;
+  font-size: 1.75rem;
+  padding: 2% 0px 0px;
 }
 
 .SobreMarce {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .GaleriaDesfMiss {
-    display: flex;
-    width: 80%;
+  display: flex;
+  width: 80%;
 }
 
 .ImgDesfileMiss {
-    padding: 1%;
-    width: 40%;
+  padding: 1%;
+  width: 40%;
 }
 
 .ParrafoDesfileMiss {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
-
-
-
-
-
-/* Medias Queri */
-
-@media (max-width: 1101px){
-    .NavList {
-        padding: 5px;
-
-    }
+/* Gray Scale */
+.NavList:hover {
+  font-size: 22px;
+  filter: drop-shadow(20);
+  color: rgb(207, 197, 59);
 }
 
-
-@media (max-width: 768px) {
-
-
-    .checkbtn{
-        display: block;
-    }
-
-    .IconoMenu, #check{
-        display: none;
-    }
-
-    .IconoMenu {
-        display: block;
-        position: fixed;
-        top: 32px;
-        right: 36px;
-        cursor: pointer;
-    }
-
-    .ListaMenu ul {
-        display: block;
-        position: fixed;
-        top: 77px;
-        left: -110%;
-        background: linear-gradient(rgb(154, 178, 200), aliceblue);;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        
-    }
-
-    .ListaMenu ul li {
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    #check:checked ~ ul{
-        left: -20PX;
-        transition: all .25s;
-    }
-
-    .Card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .MarceAlone {
-        width: 80%;
-    }
-
-    html {
-        font-size: 80%;
-    }
-
-    .MainContacto {
-        flex-direction: column;
-        align-items: center;
-    }
+.Galeria img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.Galeria a:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.02);
 }
 
+.GaleriaItem:hover {
+  transform: scale(0.98);
+}
 
-@media (max-width: 579px) {
-
-    /*     .NavList {
+/*     .NavList {
         display: none;
     }
  */
-    html {
-        font-size: 70%;
-    }
+@media (max-width: 1128px) {
+  .NavList {
+    padding: 5px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-areas: "horarios redes" "secciones secciones";
+  }
+  .Secciones ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Secciones ul li {
+    margin: 5px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+  main {
+    margin: 160px 5% 20px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .IconoMenu {
+    display: none;
+    display: block;
+    position: fixed;
+    top: 32px;
+    right: 36px;
+    cursor: pointer;
+  }
+  #check {
+    display: none;
+  }
+  #check:checked ~ ul {
+    left: -20PX;
+    transition: all 0.25s;
+  }
+  .ListaMenu ul {
+    display: block;
+    position: fixed;
+    top: 77px;
+    left: -110%;
+    background: linear-gradient(rgb(154, 178, 200), aliceblue);
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .ListaMenu ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .MarceAlone {
+    width: 80%;
+  }
+  html {
+    font-size: 80%;
+  }
+  .MainContacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 0.8fr);
+    grid-template-areas: "redes" "horarios" "secciones";
+  }
+  .Redes {
+    align-items: center;
+  }
+  .Secciones ul {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (max-width: 579px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (min-width: 600px) {
+  .Ancho {
+    grid-column: span 2;
+  }
+  .Alto {
+    grid-row: span 2;
+  }
 }
 
-
-
-/* ANIMACIONES TRANSFORMACIONES Y TRANSICIONES */
-
-.NavList:hover {
-            font-size: 22px;
-    filter: drop-shadow(20);
-    color: rgb(207, 197, 59);
-} 
-
-
-
-
-/* Gray Scale */
-.Galeria img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    
-}
-.Galeria a:hover img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-    -webkit-transform: scale(1.02);
-	transform: scale(1.02);
-}
+/*# sourceMappingURL=estilo.css.map */
