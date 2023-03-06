@@ -20,7 +20,8 @@
         ul {
             flex-direction: row;
             flex-wrap: wrap;
-            li{
+
+            li {
                 margin: 5px;
             }
         }
@@ -129,12 +130,36 @@
     }
 }
 
+
+@media all and (max-width: 1050px) {
+    .ContenedorCardsLucas {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .ContenedorCardsLucas .CardLucas {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 25px;
+
+    }
+     .ContenedorCardsLucas .CardLucas img{
+width: 20vw;
+    }
+}
+
+
 @media (min-width: 600px) {
     .Ancho {
-      grid-column: span 2;
+        grid-column: span 2;
     }
-  
+
     .Alto {
-      grid-row: span 2;
+        grid-row: span 2;
     }
-  }
+
+    .Especial {
+        grid-column: span 3;
+    }
+}

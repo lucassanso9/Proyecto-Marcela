@@ -1,0 +1,119 @@
+.cards-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px;
+  width: 400px;
+  height: 450px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.45s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.CardLucas:hover {
+  transform: scale(0.98,);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+
+@media all and (max-width: 1050px) {
+.ContenedorCardsLucas{
+  display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  */
+
+.ContenedorCardsLucas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.CardLucas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 26vw;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: beige;
+  transition: 0.45s;  
+}
+
+.CardLucasImagen {
+  width: auto;
+}
+
+.CardLucasImagen img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.descripcion p{
+  font-size: 1.3rem;
+  padding: 15px;
+  background-color: aliceblue;
+  margin: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.CardLucas a{
+  background-color: aqua;
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+a   .Button p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
