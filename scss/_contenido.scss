@@ -25,7 +25,7 @@ header {
 }
 .NavList {
 	padding: 30px;
-	transition: 0.1s;
+	transition: 0.3s;
 }
 .IconoMenu {
 	img {
@@ -88,21 +88,7 @@ p {
 	font-size: 1.5rem;
 	font-weight: 100;
 }
-.Inicio15años {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	background-color: $background-color_1;
-	border-radius: 20px;
-	width: 80%;
-	margin: 1% 10% 0%;
-	padding: 2%;
-}
-.ContenedorCards {
-	p {
-		padding: 15px;
-	}
-}
+
 .LogoHead {
 	padding: 0px 0px 8px;
 	width: 130px;
@@ -113,6 +99,7 @@ p {
 }
 .MarceAlone {
 	width: 40%;
+	border-radius: 20px;
 }
 .VNovia1 {
 	height: 100%;

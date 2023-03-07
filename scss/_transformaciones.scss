@@ -1,8 +1,7 @@
 
 /* Gray Scale */
 .NavList {
-	&:hover {
-		font-size: 22px;
+	&:hover {		
 		filter: drop-shadow(20);
 		color: $color_3;
 	}
@@ -29,3 +28,10 @@
 .GaleriaItem:hover {
     transform: scale(0.98);
   }
+
+  .CardLucas:hover {
+	transform: scale(0.98,);
+	box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+	  -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  }
+  
