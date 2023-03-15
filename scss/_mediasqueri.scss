@@ -1,7 +1,3 @@
-/*     .NavList {
-        display: none;
-    }
- */
 @media (max-width: 1128px) {
     .NavList {
         padding: 5px;
@@ -26,16 +22,56 @@
             }
         }
     }
+
+
+    .Hero .HeroText p {
+        font-size: 2vw;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
+
+
+    .Hero .HeroText {
+        top: 16.5vw;
+    }
+
+    p {
+        font-size: 2.2vw;
+    }
+
+    main {
+        margin: 95px 0% 20px;
+    }
+
+    .TituloEventos {
+        background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 47px, transparent 229px);
+    }
+
+    .ContenedorCardsLucas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .ContenedorCardsLucas .CardLucas {
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 25px;
+
+    }
+
+    .ContenedorCardsLucas .CardLucas img {
+        width: 100%;
+    }
+
+
     h1 {
         display: none;
     }
 
-    main {
-        margin: 160px 5% 20px;
-    }
 
     .checkbtn {
         display: block;
@@ -122,33 +158,52 @@
             align-items: center;
         }
     }
+
+    .Contenedor {
+        flex-direction: column;
+    }
+
+    .CardMarce {
+        border-radius: 5px;
+        margin-bottom: 6vw;
+
+        img {
+            width: 86vw;
+            height: fit-content;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 4vw;
+            line-height: 1em;
+            padding: 1em;
+            color: #FFFFFF;
+        }
+
+    }
+
 }
 
 @media (max-width: 579px) {
     html {
         font-size: 70%;
     }
+
+    .TituloEventos {
+        background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 54px, transparent 127px);
+    }
+
+    .Hero .HeroText {
+        top: 31vw;
+
+        p {
+            display: none;
+        }
+    }
+
+
+
 }
-
-
-@media all and (max-width: 1050px) {
-    .ContenedorCardsLucas {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .ContenedorCardsLucas .CardLucas {
-        flex-direction: column;
-        width: 95%;
-        margin-bottom: 25px;
-
-    }
-     .ContenedorCardsLucas .CardLucas img{
-width: 50vw;
-    }
-}
-
 
 @media (min-width: 600px) {
     .Ancho {
@@ -162,4 +217,5 @@ width: 50vw;
     .Especial {
         grid-column: span 3;
     }
+
 }

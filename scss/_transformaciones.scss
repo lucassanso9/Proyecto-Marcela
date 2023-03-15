@@ -1,9 +1,9 @@
 
-/* Gray Scale */
-.NavList {
+.NavList, h1 {
 	&:hover {		
 		filter: drop-shadow(20);
-		color: $color_3;
+		color: $color_2;
+		text-shadow: 2px 2px 5px $color_3, -2px -2px 5px $color_3;
 	}
 }
 .Galeria {
@@ -11,7 +11,7 @@
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		-webkit-transition: .3s ease-in-out;
-		transition: .3s ease-in-out;
+		transition: .3s ease-in-out;		
 	}
 	a {
 		&:hover {
@@ -29,9 +29,15 @@
     transform: scale(0.98);
   }
 
-  .CardLucas:hover {
-	transform: scale(0.98,);
-	box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-	  -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  .CardLucas a:hover {
+	transform: scale(0.99);
+	box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25),
+	  -1px -1px 3px 3px rgba(0, 0, 0, 0.22);
+	  filter: grayscale(30%);
   }
   
+  .LogoHead:hover {
+	background: radial-gradient(#f7f7f7ad -8px, #ffc107ad 12px, transparent 64px);
+	transform: scale(0.95);
+	
+  }

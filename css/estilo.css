@@ -6,7 +6,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -14,10 +14,12 @@ html {
 }
 
 main {
+  width: auto;
+  align-items: center;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin: 220px 2% 20px;
+  margin: 152px 0% 20px;
 }
 
 .Secciones {
@@ -49,6 +51,13 @@ main {
   align-items: center;
   grid-area: horarios;
 }
+.Horarios ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-right: 2rem;
+}
 .Horarios h5 {
   text-align: center;
   font-size: 1.2rem;
@@ -59,6 +68,7 @@ main {
 }
 .Horarios p {
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .Redes {
@@ -80,6 +90,7 @@ main {
   flex-direction: column;
   align-items: stretch;
   padding-right: 2rem;
+  padding-left: 0px;
 }
 .Redes ul li {
   text-align: end;
@@ -101,73 +112,10 @@ footer {
   grid-template-areas: "secciones horarios redes" "secciones horarios redes";
 }
 
-.ContenedorCardsLucas {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.CardLucas {
+.pie {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 26vw;
-  padding: 20px;
-  border-radius: 15px;
-  background: linear-gradient(rgb(154, 178, 200), aliceblue, rgb(154, 178, 200));
-  transition: 0.45s;
-}
-.CardLucas a {
-  background: linear-gradient(rgb(148, 113, 237), rgb(93, 0, 225));
-  padding: 12px;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.CardLucasImagen {
-  width: auto;
-}
-.CardLucasImagen img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.descripcion p {
-  font-size: 1.3rem;
-  padding: 15px;
-  background: white;
-  margin: 15px 0px;
-  border-radius: 15px;
   text-align: center;
-}
-
-a .Button p {
-  font-size: 1.4rem;
-  text-align: center;
-  margin: 0;
-  color: white;
-}
-
-.GaleriaItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.GaleriaGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: minmax(250px, auto);
-  gap: 15px;
-  padding: 15px;
-  grid-auto-flow: dense;
 }
 
 h1 {
@@ -175,6 +123,8 @@ h1 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 0;
+  transition: 0.4s;
+  display: block;
 }
 
 header {
@@ -203,6 +153,12 @@ header {
   transition: 0.3s;
 }
 
+.LogoHead {
+  padding: 0px 0px 8px;
+  width: 130px;
+  transition: all 2s ease-out;
+}
+
 .IconoMenu {
   display: none;
 }
@@ -216,7 +172,9 @@ header {
   display: none;
 }
 
+/* INDEX */
 .Card {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,23 +188,175 @@ header {
   padding: 1% 5%;
   width: auto;
 }
+.Descript p {
+  font-size: 2rem;
+}
 
-.DescriptSt {
+.ContenedorCardsLucas {
+  margin: 0% 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.CardLucas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 28vw;
+  padding: 12px;
+  border-radius: 15px;
+  background: linear-gradient(rgb(154, 178, 200), aliceblue, rgb(154, 178, 200));
+}
+.CardLucas a {
+  background: linear-gradient(rgb(148, 113, 237), rgb(93, 0, 225));
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.CardLucasImagen {
+  width: auto;
+}
+.CardLucasImagen img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.Descripcion p {
+  font-size: 1.3rem;
+  padding: 15px;
+  background: white;
+  margin: 15px 0px;
+  border-radius: 15px;
   text-align: center;
-  padding: 2%;
-  margin: 0px 15vw;
+}
+
+a .Button p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+  color: white;
+  transition: 0.45s;
+}
+
+/* CARD MARCELA */
+.Contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.CardMarce {
+  position: relative;
+  width: fit-content;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.CardMarce .ContenedorTexto {
+  position: absolute;
+  width: 58%;
+  height: fit-content;
+  left: 2vw;
+  bottom: 2vw;
+  background: rgba(0, 0, 0, 0.51);
+  border-radius: 20px;
+}
+.CardMarce .dos {
+  top: 2vw;
+  left: 2vw;
+  width: 90%;
+}
+.CardMarce p {
+  position: relative;
+  font-size: 1.6vw;
+  line-height: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: white;
+  text-align: center;
+}
+.CardMarce img {
+  width: 35vw;
+  left: 0px;
+  top: 0px;
+  border-radius: 20px;
+}
+
+.Hero {
+  width: 100vw;
+  height: 44vw;
+  margin-bottom: 10rem;
+}
+.Hero img {
+  position: relative;
+  width: 100%;
+}
+.Hero .HeroText {
+  position: absolute;
+  top: 24vw;
+  left: 10vw;
+  width: 35vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
+}
+.Hero .HeroText h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.8vw;
+}
+.Hero .HeroText p {
+  font-size: 1.5vw;
+  line-height: 1.5em;
+}
+
+.Opacidad {
+  width: 100vw;
+  height: 44vw;
+  background: linear-gradient(90deg, #000000, rgba(255, 255, 255, 0));
+  position: relative;
+  bottom: 44vw;
+  left: 0;
+}
+
+.GaleriaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.GaleriaGrid {
+  margin: 0% 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 15px;
+  padding: 15px;
+  grid-auto-flow: dense;
 }
 
 .Encabezado {
   text-align: center;
   font-size: 3.125rem;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: lighter;
 }
 
 .Introduccion {
   margin: 8% 10% 6%;
   text-align: center;
+}
+
+b {
+  font-weight: 700;
 }
 
 a {
@@ -260,24 +370,9 @@ li {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 2.5rem;
-  margin: 0px 0px 20px 0px;
-}
-
-h3 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
 p {
   font-size: 1.5rem;
   font-weight: 100;
-}
-
-.LogoHead {
-  padding: 0px 0px 8px;
-  width: 130px;
 }
 
 .ImagenPrincipal {
@@ -286,7 +381,7 @@ p {
 }
 
 .MarceAlone {
-  width: 40%;
+  width: 45vw;
   border-radius: 20px;
 }
 
@@ -387,9 +482,12 @@ input {
 }
 
 .TituloEventos {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(160, 127, 27, 0.6784313725), -2px -2px 5px rgba(160, 127, 27, 0.6784313725);
   margin: 2% 0%;
   padding: 2%;
-  background-color: aliceblue;
+  background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 150px, transparent 312px);
 }
 
 .SubtituloEventos {
@@ -408,10 +506,14 @@ input {
   font-size: 1.25rem;
 }
 
-/* Gray Scale */
-.NavList:hover {
+.carousel {
+  width: 100%;
+}
+
+.NavList:hover, h1:hover {
   filter: drop-shadow(20);
-  color: rgb(207, 197, 59);
+  color: white;
+  text-shadow: 2px 2px 5px rgb(225, 214, 64), -2px -2px 5px rgb(225, 214, 64);
 }
 
 .Galeria img {
@@ -431,15 +533,17 @@ input {
   transform: scale(0.98);
 }
 
-.CardLucas:hover {
-  transform: scale(0.98);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+.CardLucas a:hover {
+  transform: scale(0.99);
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25), -1px -1px 3px 3px rgba(0, 0, 0, 0.22);
+  filter: grayscale(30%);
 }
 
-/*     .NavList {
-        display: none;
-    }
- */
+.LogoHead:hover {
+  background: radial-gradient(rgba(247, 247, 247, 0.6784313725) -8px, rgba(255, 193, 7, 0.6784313725) 12px, transparent 64px);
+  transform: scale(0.95);
+}
+
 @media (max-width: 1128px) {
   .NavList {
     padding: 5px;
@@ -457,13 +561,38 @@ input {
   .Secciones ul li {
     margin: 5px;
   }
+  .Hero .HeroText p {
+    font-size: 2vw;
+  }
 }
-@media (max-width: 768px) {
-  h1 {
-    display: none;
+@media (max-width: 830px) {
+  .Hero .HeroText {
+    top: 16.5vw;
+  }
+  p {
+    font-size: 2.2vw;
   }
   main {
-    margin: 160px 5% 20px;
+    margin: 95px 0% 20px;
+  }
+  .TituloEventos {
+    background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 47px, transparent 229px);
+  }
+  .ContenedorCardsLucas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ContenedorCardsLucas .CardLucas {
+    flex-direction: column;
+    width: 80vw;
+    margin-bottom: 25px;
+  }
+  .ContenedorCardsLucas .CardLucas img {
+    width: 100%;
+  }
+  h1 {
+    display: none;
   }
   .checkbtn {
     display: block;
@@ -527,24 +656,37 @@ input {
     flex-direction: row;
     align-items: center;
   }
+  .Contenedor {
+    flex-direction: column;
+  }
+  .CardMarce {
+    border-radius: 5px;
+    margin-bottom: 6vw;
+  }
+  .CardMarce img {
+    width: 86vw;
+    height: fit-content;
+    border-radius: 5px;
+  }
+  .CardMarce p {
+    font-size: 4vw;
+    line-height: 1em;
+    padding: 1em;
+    color: #FFFFFF;
+  }
 }
 @media (max-width: 579px) {
   html {
     font-size: 70%;
   }
-}
-@media all and (max-width: 1050px) {
-  .ContenedorCardsLucas {
-    display: flex;
-    flex-direction: column;
+  .TituloEventos {
+    background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 54px, transparent 127px);
   }
-  .ContenedorCardsLucas .CardLucas {
-    flex-direction: column;
-    width: 95%;
-    margin-bottom: 25px;
+  .Hero .HeroText {
+    top: 31vw;
   }
-  .ContenedorCardsLucas .CardLucas img {
-    width: 50vw;
+  .Hero .HeroText p {
+    display: none;
   }
 }
 @media (min-width: 600px) {

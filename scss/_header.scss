@@ -1,0 +1,52 @@
+h1{
+    font-family: $font-family_2;
+    font-size: 3rem;
+    text-align: center;
+	margin-bottom: 0;
+	transition: 0.4s;
+	display: block;
+}
+header {
+	margin-bottom: 1px;
+	width: 100%;
+	padding: 8px 5% 0px;
+	background: linear-gradient(aliceblue, rgb(154, 178, 200));
+	position: fixed;
+	z-index: 2;
+}
+
+.ListaMenu {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	ul {
+		display: flex;
+		flex-direction: row;
+		margin: 20PX;
+	}
+}
+.NavList {
+	padding: 30px;
+	transition: 0.3s;
+}
+
+.LogoHead {
+	padding: 0px 0px 8px;
+	width: 130px;
+	transition: all 2s ease-out;
+}
+
+.IconoMenu {
+	img {
+		width: 40px;
+		height: 40px;
+		border-radius: 2px;
+	}
+	display: none;
+}
+#check {
+	display: none;
+}
+
+

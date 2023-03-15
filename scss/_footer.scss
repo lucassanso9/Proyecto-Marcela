@@ -7,9 +7,6 @@
     font-weight: bold;
 }
 
-
-
-
 .Secciones {
     display: flex;
     flex-direction: column;
@@ -27,6 +24,7 @@
         align-items: stretch;
         padding-right: 2rem;
 
+
     }
 }
 
@@ -36,12 +34,21 @@
     
     flex-direction: column;
     align-items: center;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        padding-right: 2rem;
 
+
+    }
     h5 {
         @include contenido;
     }
     p{
         font-size: 1.2rem;
+        font-weight: 500;
     }
 
     grid-area: horarios;
@@ -64,6 +71,7 @@
         flex-direction: column;
         align-items: stretch;
         padding-right: 2rem;
+        padding-left: 0px;
 
         li {
             text-align: end;
@@ -90,4 +98,11 @@ footer {
         "secciones horarios redes"
         "secciones horarios redes"
         ;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
 }

@@ -1,62 +1,4 @@
-h1{
-    font-family: $font-family_2;
-    font-size: 3rem;
-    text-align: center;
-	margin-bottom: 0;
-}
-header {
-	margin-bottom: 1px;
-	width: 100%;
-	padding: 8px 5% 0px;
-	background: linear-gradient(aliceblue, rgb(154, 178, 200));
-	position: fixed;
-	z-index: 2;
-}
-.ListaMenu {
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	ul {
-		display: flex;
-		flex-direction: row;
-		margin: 20PX;
-	}
-}
-.NavList {
-	padding: 30px;
-	transition: 0.3s;
-}
-.IconoMenu {
-	img {
-		width: 40px;
-		height: 40px;
-		border-radius: 2px;
-	}
-	display: none;
-}
-#check {
-	display: none;
-}
 
-.Card {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-.Descript {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 1% 5%;
-	width: auto;
-}
-.DescriptSt {
-	text-align: center;
-	padding: 2%;
-	margin: 0px 15vw;
-}
 .Encabezado {
 	text-align: center;
 	font-size: 3.125rem;
@@ -67,6 +9,11 @@ header {
 	margin: 8% 10% 6%;
 	text-align: center;
 }
+
+b{
+	font-weight: 700;
+}
+
 a {
 	text-decoration: none;
 	color: $color_1;
@@ -76,29 +23,20 @@ li {
 	list-style-type: none;
 	text-decoration: none;
 }
-h2 {
-	font-size: 2.5rem;
-	margin: 0px 0px 20px 0px;
-}
-h3 {
-	font-size: 2.5rem;
-	text-align: center;
-}
+
+
 p {
 	font-size: 1.5rem;
 	font-weight: 100;
 }
 
-.LogoHead {
-	padding: 0px 0px 8px;
-	width: 130px;
-}
+
 .ImagenPrincipal {
 	height: auto;
 	width: auto;
 }
 .MarceAlone {
-	width: 40%;
+	width: 45vw;
 	border-radius: 20px;
 }
 .VNovia1 {
@@ -182,9 +120,12 @@ input {
 	border-color: $border-color_1;
 }
 .TituloEventos {
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px #a07f1bad, -2px -2px 5px #a07f1bad;
 	margin: 2% 0%;
 	padding: 2%;
-	background-color: $background-color_1;
+	background: radial-gradient(#ffc107ad 150px, transparent 312px);
 }
 .SubtituloEventos {
 	font-size: 1.75rem;
@@ -199,4 +140,8 @@ input {
 
 .ParrafoDesfileMiss {
 	font-size: 1.25rem;
+}
+
+.carousel {
+	width: 100%;
 }

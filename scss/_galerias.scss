@@ -13,6 +13,7 @@
 
 
 .GaleriaGrid {
+    margin: 0% 2%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: minmax(250px, auto);

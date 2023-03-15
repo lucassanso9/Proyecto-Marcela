@@ -9,15 +9,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: $font-family_1;
-
+	
 }
 html {
 	font-size: 100%;
 }
 
 main {
+	width: auto;
+	align-items: center;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
-	margin: 220px 2% 20px;
+	margin: 152px 0% 20px;
 }
