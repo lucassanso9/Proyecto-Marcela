@@ -24,8 +24,13 @@
     }
 
 
-    .Hero .HeroText p {
-        font-size: 2vw;
+    .Hero .HeroText {
+        top: 19vw;
+
+
+        p {
+            font-size: 2vw;
+        }
     }
 
 }
@@ -33,21 +38,27 @@
 @media (max-width: 830px) {
 
 
-    .Hero .HeroText {
-        top: 16.5vw;
-    }
+    .Hero {
+        width: 130vw;
+        margin-bottom: 18vw;
 
-    p {
-        font-size: 2.2vw;
+        .Opacidad {
+            height: 58vw;
+            bottom: 58vw;
+        }
+
+        .HeroText {
+            p {
+                font-size: 2.2vw;
+            }
+        }
     }
 
     main {
         margin: 95px 0% 20px;
+        overflow: hidden;
     }
 
-    .TituloEventos {
-        background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 47px, transparent 229px);
-    }
 
     .ContenedorCardsLucas {
         display: flex;
@@ -125,10 +136,6 @@
         align-items: center;
     }
 
-    .MarceAlone {
-        width: 80%;
-    }
-
     html {
         font-size: 80%;
     }
@@ -159,22 +166,17 @@
         }
     }
 
-    .Contenedor {
-        flex-direction: column;
-    }
-
     .CardMarce {
-        border-radius: 5px;
-        margin-bottom: 6vw;
+        margin: 3vw 0vw;
 
         img {
-            width: 86vw;
+            width: 45vw;
             height: fit-content;
-            border-radius: 5px;
+
         }
 
         p {
-            font-size: 4vw;
+            font-size: 2vw;
             line-height: 1em;
             padding: 1em;
             color: #FFFFFF;
@@ -189,20 +191,41 @@
         font-size: 70%;
     }
 
-    .TituloEventos {
-        background: radial-gradient(rgba(255, 193, 7, 0.6784313725) 54px, transparent 127px);
-    }
 
-    .Hero .HeroText {
-        top: 31vw;
+    .Hero {
+        width: 170vw;
+        margin-bottom: 40vw;
 
-        p {
-            display: none;
+        .Opacidad {
+            height: 80vw;
+            bottom: 80vw;
+        }
+
+        .HeroText {
+            top: 35vw;
+
+            p {
+                display: none;
+            }
         }
     }
 
+    .Contenedor {
+        flex-direction: column;
 
+        img {
+            width: 90vw;
+        }
 
+        p {
+            font-size: 4vw;
+        }
+    }
+
+    .GaleriaGrid {
+        width: 90vw;
+        align-self: center;
+    }
 }
 
 @media (min-width: 600px) {
@@ -217,5 +240,4 @@
     .Especial {
         grid-column: span 3;
     }
-
 }

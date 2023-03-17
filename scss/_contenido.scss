@@ -1,4 +1,3 @@
-
 .Encabezado {
 	text-align: center;
 	font-size: 3.125rem;
@@ -35,10 +34,7 @@ p {
 	height: auto;
 	width: auto;
 }
-.MarceAlone {
-	width: 45vw;
-	border-radius: 20px;
-}
+
 .VNovia1 {
 	height: 100%;
 }
@@ -119,28 +115,8 @@ input {
 	border-radius: 10px;
 	border-color: $border-color_1;
 }
-.TituloEventos {
-	text-align: center;
-	color: white;
-	text-shadow: 2px 2px 5px #a07f1bad, -2px -2px 5px #a07f1bad;
-	margin: 2% 0%;
-	padding: 2%;
-	background: radial-gradient(#ffc107ad 150px, transparent 312px);
-}
-.SubtituloEventos {
-	font-size: 1.75rem;
-	padding: 2% 0px 0px;
-}
-.SobreMarce {
-	width: auto;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-}
 
-.ParrafoDesfileMiss {
-	font-size: 1.25rem;
-}
+
 
 .carousel {
 	width: 100%;
