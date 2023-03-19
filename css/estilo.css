@@ -23,6 +23,37 @@ main {
   margin: 152px 0% 20px;
 }
 
+b {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  font-size: 1.25rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.Introduccion {
+  margin: 8% 15vw 6%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2vw;
+}
+
 .Secciones {
   display: flex;
   flex-direction: column;
@@ -98,6 +129,7 @@ main {
 }
 .Redes .IconoFoot {
   margin-left: 1rem;
+  width: 30px;
 }
 
 footer {
@@ -109,14 +141,17 @@ footer {
   justify-items: center;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  /*  grid-template-rows: repeat(2, 1fr); */
-  grid-template-areas: "secciones horarios redes" "secciones horarios redes";
+  grid-template-areas: "secciones horarios redes" "secciones horarios redes" "- - pie";
 }
 
 .pie {
+  grid-area: pie;
   display: flex;
   flex-direction: column;
-  text-align: center;
+}
+.pie p {
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -150,7 +185,7 @@ header {
 }
 
 .NavList {
-  padding: 30px;
+  padding: 2.6vw;
   transition: 0.3s;
 }
 
@@ -206,31 +241,39 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   margin: 0vw 1vw;
   padding: 12px;
   border-radius: 15px;
   background: linear-gradient(rgb(154, 178, 200), aliceblue, rgb(154, 178, 200));
 }
-.CardLucas .SubtituloEventos {
+.CardLucas .Titulo {
+  width: 100%;
+  height: auto;
+}
+.CardLucas .Titulo h4 {
   color: white;
   font-size: 2.1rem;
   font-family: "Playfair Display", serif;
-  height: 4vw;
-  width: 100%;
   text-align: center;
-  border-radius: 15px;
 }
 .CardLucas .CardLucasImagen {
   width: auto;
+  height: auto;
 }
 .CardLucas .CardLucasImagen img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
 }
+.CardLucas .Descripcion {
+  height: 100%;
+}
 .CardLucas .Descripcion p {
+  display: flex;
+  align-items: center;
+  height: 90%;
   font-size: 1.3rem;
   font-weight: 400;
   padding: 15px;
@@ -342,118 +385,36 @@ header {
   grid-auto-flow: dense;
 }
 
-.Encabezado {
-  text-align: center;
-  font-size: 3.125rem;
-  font-family: "Inter", sans-serif;
-  font-weight: lighter;
-}
-
-.Introduccion {
-  margin: 8% 10% 6%;
-  text-align: center;
-}
-
-b {
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-li {
-  font-size: 1.25rem;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-p {
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-
-.ImagenPrincipal {
-  height: auto;
-  width: auto;
-}
-
-.VNovia1 {
-  height: 100%;
-}
-
-.VNovia2 {
-  height: 50vh;
-  margin: 0px 0px 0px 20px;
-  padding: 5px 0px;
-}
-
-.VNovia3 {
-  height: 50vh;
-  margin: 0px 0px 0px 20px;
-  padding: 5px 0px;
-}
-
-.Mapa {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  margin: 25px;
-  border: 1px white;
-  border-radius: 20px;
-}
-
-.ListaContacto {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.ListaHorarios {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.ContactoTitle {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.TextosFooter {
-  font-size: 20px;
-}
-
 .MainContacto {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 250px 5% 20px;
 }
-
-.IconoFoot {
-  width: 30px;
+.MainContacto .FormularioCont h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-
-.CajaComentarios {
+.MainContacto .FormularioCont .SubtituloSolicitud {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.MainContacto .FormularioCont .CajaComentarios {
   width: auto;
   border-radius: 20px;
-  background-color: rgb(247, 247, 247);
+  background: linear-gradient(aliceblue, rgb(154, 178, 200));
   padding: 20px;
-}
-
-.SubtituloSolicitud {
-  text-align: center;
 }
 
 .FormularioContacto {
   display: block;
   align-items: center;
   justify-items: center;
+}
+
+.SubtituloSolicitud {
+  text-align: center;
 }
 
 label {
@@ -464,19 +425,34 @@ input {
   position: relative;
   margin: 10px;
   padding: 8px;
-}
-
-.BotonContacto {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  background-color: rgb(93, 0, 255);
   border-radius: 10px;
-  border-color: white;
+  border-color: aliceblue;
 }
 
-.carousel {
-  width: 100%;
+textarea {
+  border-radius: 8px;
+  border-color: aliceblue;
+}
+
+.Botones {
+  display: flex;
+}
+
+.Mapa {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 5vw;
+  border: 1px white;
+  border-radius: 20px;
+}
+.Mapa img {
+  width: 45vw;
+}
+.Mapa a {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 1rem;
 }
 
 .SobreMarce {
@@ -508,6 +484,7 @@ input {
 /* MOVER TRANSFORMACIONES Y VARIABLES */
 .ContenedorButton {
   width: 100%;
+  margin-top: auto;
 }
 
 .Button {
@@ -571,15 +548,15 @@ input {
   transform: scale(0.95);
 }
 
-@media (max-width: 1128px) {
+@media (max-width: 1145px) {
   .NavList {
-    padding: 5px;
+    padding: 0.7vw;
   }
   footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
-    grid-template-areas: "horarios redes" "secciones secciones";
+    grid-template-areas: "horarios redes" "secciones secciones" "- pie";
   }
   .Secciones ul {
     flex-direction: row;
@@ -594,8 +571,18 @@ input {
   .Hero .HeroText p {
     font-size: 2vw;
   }
+  .MainContacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .MainContacto .Mapa img {
+    width: 65vw;
+  }
 }
 @media (max-width: 830px) {
+  .MainContacto {
+    margin: 140px 0px 0px;
+  }
   .Hero {
     width: 130vw;
     margin-bottom: 18vw;
@@ -669,15 +656,11 @@ input {
   html {
     font-size: 80%;
   }
-  .MainContacto {
-    flex-direction: column;
-    align-items: center;
-  }
   footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 0.8fr);
-    grid-template-areas: "redes" "horarios" "secciones";
+    grid-template-areas: "redes" "horarios" "secciones" "pie";
   }
   .Redes {
     align-items: center;
@@ -685,6 +668,9 @@ input {
   .Secciones ul {
     flex-direction: row;
     align-items: center;
+  }
+  .SobreMarce .ParrafoDesfiles {
+    margin: 0 5vw 5vw;
   }
   .CardMarce {
     margin: 3vw 0vw;
@@ -697,7 +683,10 @@ input {
     font-size: 2vw;
     line-height: 1em;
     padding: 1em;
-    color: #FFFFFF;
+    color: white;
+  }
+  .GaleriaGrid {
+    margin: 140px 2%;
   }
 }
 @media (max-width: 579px) {
@@ -730,6 +719,12 @@ input {
   .GaleriaGrid {
     width: 90vw;
     align-self: center;
+  }
+  .MainContacto {
+    margin: 140px 0px 0px;
+  }
+  .MainContacto .Mapa img {
+    width: 80vw;
   }
 }
 @media (min-width: 600px) {

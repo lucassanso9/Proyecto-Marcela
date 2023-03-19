@@ -1,6 +1,6 @@
-@media (max-width: 1128px) {
+@media (max-width: 1145px) {
     .NavList {
-        padding: 5px;
+        padding: 0.7vw;
     }
 
     footer {
@@ -9,7 +9,8 @@
         grid-template-rows: repeat(2, 0.5fr);
         grid-template-areas:
             "horarios redes"
-            "secciones secciones";
+            "secciones secciones"
+            "- pie";
     }
 
     .Secciones {
@@ -33,9 +34,26 @@
         }
     }
 
+    .MainContacto {
+        flex-direction: column;
+        align-items: center;
+
+        .Mapa {
+            img {
+                width: 65vw;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 830px) {
+
+
+    .MainContacto {
+        margin: 140px 0px 0px;
+    }
+
 
 
     .Hero {
@@ -140,10 +158,6 @@
         font-size: 80%;
     }
 
-    .MainContacto {
-        flex-direction: column;
-        align-items: center;
-    }
 
     footer {
         display: grid;
@@ -152,7 +166,8 @@
         grid-template-areas:
             "redes"
             "horarios"
-            "secciones";
+            "secciones"
+            "pie";
     }
 
     .Redes {
@@ -165,6 +180,11 @@
             align-items: center;
         }
     }
+
+    .SobreMarce .ParrafoDesfiles {
+        margin: 0 5vw 5vw;
+    }
+
 
     .CardMarce {
         margin: 3vw 0vw;
@@ -179,11 +199,13 @@
             font-size: 2vw;
             line-height: 1em;
             padding: 1em;
-            color: #FFFFFF;
+            color: $color_2;
         }
-
     }
 
+    .GaleriaGrid {
+        margin: 140px 2%;
+    }
 }
 
 @media (max-width: 579px) {
@@ -222,10 +244,20 @@
         }
     }
 
+
     .GaleriaGrid {
         width: 90vw;
         align-self: center;
     }
+
+    .MainContacto {
+        margin: 140px 0px 0px;
+
+        .Mapa img {
+            width: 80vw;
+        }
+    }
+
 }
 
 @media (min-width: 600px) {
